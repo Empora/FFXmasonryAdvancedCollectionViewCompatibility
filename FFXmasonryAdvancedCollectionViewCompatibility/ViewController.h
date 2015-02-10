@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import <AAPLCollectionViewController.h>
+@interface ViewController : AAPLCollectionViewController
 
 
 @end

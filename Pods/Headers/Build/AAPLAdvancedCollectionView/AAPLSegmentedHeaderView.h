@@ -1,0 +1,1 @@
+../../../AAPLAdvancedCollectionView/AdvancedCollectionView/Views/AAPLSegmentedHeaderView.h

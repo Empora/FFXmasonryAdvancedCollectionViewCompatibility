@@ -1,0 +1,1 @@
+../../../AAPLAdvancedCollectionView/AdvancedCollectionView/Layouts/AAPLCollectionViewGridLayoutAttributes.h

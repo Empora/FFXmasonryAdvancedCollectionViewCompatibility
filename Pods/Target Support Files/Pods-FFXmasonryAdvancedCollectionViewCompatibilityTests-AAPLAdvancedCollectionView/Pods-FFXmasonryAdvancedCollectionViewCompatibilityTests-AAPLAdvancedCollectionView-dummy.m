@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_FFXmasonryAdvancedCollectionViewCompatibilityTests_AAPLAdvancedCollectionView : NSObject
+@end
+@implementation PodsDummy_Pods_FFXmasonryAdvancedCollectionViewCompatibilityTests_AAPLAdvancedCollectionView
+@end

@@ -1,0 +1,5 @@
+#include "Pods-FFXmasonryAdvancedCollectionViewCompatibility-AAPLAdvancedCollectionView.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/AAPLAdvancedCollectionView" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AAPLAdvancedCollectionView" "${PODS_ROOT}/Headers/Public/FFXCollectionViewMasonryLayout"
+OTHER_LDFLAGS = ${PODS_FFXMASONRYADVANCEDCOLLECTIONVIEWCOMPATIBILITY_AAPLADVANCEDCOLLECTIONVIEW_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
