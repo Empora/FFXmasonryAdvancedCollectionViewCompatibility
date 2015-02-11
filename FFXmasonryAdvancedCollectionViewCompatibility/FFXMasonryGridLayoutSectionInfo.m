@@ -62,7 +62,7 @@
     // Lay out items and footers only if there actually ARE items.
     if (numberOfItems) {
         /**********************************/
-        FFXCollectionViewMasonryLayoutLogic *layoutLogic = [[FFXCollectionViewMasonryLayoutLogic alloc]init];
+        FFXCollectionViewMasonryLayoutLogic * layoutLogic = [[FFXCollectionViewMasonryLayoutLogic alloc]init];
         layoutLogic.numberOfColums = 2;
         layoutLogic.interItemSpacing = self.interItemSpacing;
         layoutLogic.padding = self.insets;
