@@ -21,8 +21,14 @@
     CGFloat availableHeight = self.layoutInfo.height - start;
     NSInteger numberOfItems = [self.items count];
     NSInteger numberOfColumns = self.numberOfColumns;
-    //CGFloat columnWidth = self.columnWidth;
+    __block CGFloat columnWidth = self.columnWidth;
     __block CGFloat originY = start;
+    __block CGFloat rowHeight = 0;
+    if (self.items.count) {
+        AAPLGridLayoutItemInfo * currentItem =[self.items objectAtIndex:0];
+        rowHeight = currentItem.frame.size.height;
+    }
+    
     
     // First lay out headers
     [self.headers enumerateObjectsUsingBlock:^(AAPLGridLayoutSupplementalItemInfo *headerInfo, NSUInteger headerIndex, BOOL *stop) {
@@ -75,13 +81,19 @@
         layoutLogic.lastYValueForColumns = self.lastYValueForColumns;
         
         NSDictionary * layoutAttributes = [layoutLogic computeLayoutWithmeasureItemBlock:^CGSize(NSInteger itemIndex,CGRect frame){
-            return measureItemBlock(itemIndex,frame);
+            
+            CGSize itemSize = measureItemBlock(itemIndex,frame);
+            if (CGSizeEqualToSize(itemSize, CGSizeZero)) {
+                itemSize = CGSizeMake(columnWidth,rowHeight);
+            }
+            
+            return itemSize;
         }];
-
+        
         // Convert all layoutAttributes to
         NSInteger index = 0;
         AAPLGridLayoutRowInfo *row = [self addRow];
-
+        
         for (AAPLGridLayoutItemInfo * item in self.items) {
             [row.items addObject:item];
             NSIndexPath * path = [NSIndexPath indexPathForItem:index inSection:0];

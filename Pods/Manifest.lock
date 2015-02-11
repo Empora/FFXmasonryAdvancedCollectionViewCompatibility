@@ -1,6 +1,6 @@
 PODS:
   - AAPLAdvancedCollectionView (1.1.2)
-  - FFXCollectionViewMasonryLayout (1.0.2)
+  - FFXCollectionViewMasonryLayout (1.0.3)
 
 DEPENDENCIES:
   - AAPLAdvancedCollectionView (from `https://github.com/empora/AAPLAdvancedCollectionView.git`)
@@ -14,14 +14,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   AAPLAdvancedCollectionView:
-    :commit: 3f561a58ae1d277cf3690852cf1ddacf1860617f
+    :commit: f56dd44cadfac3109636dff05672d82451c3a4a8
     :git: https://github.com/empora/AAPLAdvancedCollectionView.git
   FFXCollectionViewMasonryLayout:
-    :commit: a822de68c9715d9ea76ae3e6fcf11eb9afba001a
+    :commit: 8a787349ba558555ce2c95fd22db9cf5450f984c
     :git: https://github.com/Empora/FFXCollectionViewMasonryLayout.git
 
 SPEC CHECKSUMS:
   AAPLAdvancedCollectionView: e7892ff7a5a8014c0efecb10cec3305d7e8d1dcb
-  FFXCollectionViewMasonryLayout: c3fe97a83d639cd73f600c4b0da2d628002e8c79
+  FFXCollectionViewMasonryLayout: 47def1f699eecfa9e439d80f9eb9876e4fc00ffa
 
 COCOAPODS: 0.35.0
