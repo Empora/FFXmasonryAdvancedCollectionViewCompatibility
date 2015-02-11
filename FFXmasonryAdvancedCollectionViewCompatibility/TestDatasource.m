@@ -56,7 +56,7 @@
         return temp;
     } else {
         // Random string
-        CGSize temp = CGSizeMake(collectionView.frame.size.width/2, 100 + (arc4random() % 300));
+        CGSize temp = CGSizeMake(collectionView.frame.size.width/2-100, 100 + (arc4random() % 300));
         return temp;
     }
 }

@@ -75,8 +75,7 @@
         layoutLogic.lastYValueForColumns = self.lastYValueForColumns;
         
         NSDictionary * layoutAttributes = [layoutLogic computeLayoutWithmeasureItemBlock:^CGSize(NSInteger itemIndex,CGRect frame){
-            CGSize itemSize = measureItemBlock(itemIndex,CGRectZero);
-            return itemSize;
+            return measureItemBlock(itemIndex,frame);
         }];
 
         // Convert all layoutAttributes to

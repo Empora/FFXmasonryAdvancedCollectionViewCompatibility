@@ -10,4 +10,3 @@ target 'FFXmasonryAdvancedCollectionViewCompatibilityTests' do
     pod 'AAPLAdvancedCollectionView', :git => 'https://github.com/empora/AAPLAdvancedCollectionView.git'
     pod 'FFXCollectionViewMasonryLayout', :git => 'https://github.com/Empora/FFXCollectionViewMasonryLayout.git'
 end
-
