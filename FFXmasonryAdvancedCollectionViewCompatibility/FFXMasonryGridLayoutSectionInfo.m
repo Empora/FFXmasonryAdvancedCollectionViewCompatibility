@@ -63,9 +63,9 @@
     if (numberOfItems) {
         /**********************************/
         FFXCollectionViewMasonryLayoutLogic *layoutLogic = [[FFXCollectionViewMasonryLayoutLogic alloc]init];
+        layoutLogic.numberOfColums = 2;
         layoutLogic.interItemSpacing = self.interItemSpacing;
         layoutLogic.padding = self.insets;
-        layoutLogic.numberOfColums = 2;
         layoutLogic.numberOfItems = numberOfItems;
         layoutLogic.collectionViewFrame = CGRectMake(0,0,self.layoutInfo.width, 0); // we just need height
         layoutLogic.interItemSpacing = self.interItemSpacing;
