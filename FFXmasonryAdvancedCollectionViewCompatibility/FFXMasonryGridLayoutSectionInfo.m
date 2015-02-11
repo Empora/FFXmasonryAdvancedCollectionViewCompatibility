@@ -21,11 +21,8 @@
     
     /// The height available to placeholder
     CGFloat availableHeight = self.layoutInfo.height - start;
-    UIEdgeInsets margins = self.insets;
     NSInteger numberOfItems = [self.items count];
-    CGFloat columnWidth = self.columnWidth;
     
-    __block CGFloat originX = margins.left;
     __block CGFloat originY = start;
     
     // First lay out headers
@@ -65,14 +62,12 @@
     // Lay out items and footers only if there actually ARE items.
     if (numberOfItems) {
         /**********************************/
-        originY += margins.top;
         FFXCollectionViewMasonryLayoutLogic *layoutLogic = [[FFXCollectionViewMasonryLayoutLogic alloc]init];
         layoutLogic.interItemSpacing = self.interItemSpacing;
-        layoutLogic.padding = UIEdgeInsetsZero;
+        layoutLogic.padding = self.insets;
         layoutLogic.numberOfColums = 2;
         layoutLogic.numberOfItems = numberOfItems;
-        layoutLogic.collectionViewFrame = CGRectMake(originX,0,columnWidth, 0); // we just need height
-        layoutLogic.padding = self.insets;
+        layoutLogic.collectionViewFrame = CGRectMake(0,0,self.layoutInfo.width, 0); // we just need height
         layoutLogic.interItemSpacing = self.interItemSpacing;
         if(!self.lastYValueForColumns) {
             [self prepareLastYValueArrayForNumberOfColumns:layoutLogic.numberOfColums];
@@ -112,7 +107,6 @@
         footerInfo.frame = CGRectMake(0, originY, width, height);
         originY += height;
     }
-    
     self.frame = CGRectMake(0, start, width, originY - start);
 }
 
