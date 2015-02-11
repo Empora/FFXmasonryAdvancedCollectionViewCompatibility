@@ -22,7 +22,8 @@
     /// The height available to placeholder
     CGFloat availableHeight = self.layoutInfo.height - start;
     NSInteger numberOfItems = [self.items count];
-    
+    NSInteger numberOfColumns = self.numberOfColumns;
+    //CGFloat columnWidth = self.columnWidth;
     __block CGFloat originY = start;
     
     // First lay out headers
@@ -63,14 +64,15 @@
     if (numberOfItems) {
         /**********************************/
         FFXCollectionViewMasonryLayoutLogic * layoutLogic = [[FFXCollectionViewMasonryLayoutLogic alloc]init];
-        layoutLogic.numberOfColums = 2;
+        //layoutLogic.numberOfColums = ;
         layoutLogic.interItemSpacing = self.interItemSpacing;
+        layoutLogic.numberOfColums = numberOfColumns;
         layoutLogic.padding = self.insets;
         layoutLogic.numberOfItems = numberOfItems;
         layoutLogic.collectionViewFrame = CGRectMake(0,0,self.layoutInfo.width, 0); // we just need height
         layoutLogic.interItemSpacing = self.interItemSpacing;
         if(!self.lastYValueForColumns) {
-            [self prepareLastYValueArrayForNumberOfColumns:layoutLogic.numberOfColums];
+            [self prepareLastYValueArrayForNumberOfColumns:layoutLogic.numberOfColums withValue:@(originY)];
         }
         layoutLogic.lastYValueForColumns = self.lastYValueForColumns;
         
@@ -110,10 +112,10 @@
 }
 
 // creates an Array with same dimensions as number of columns and initalizes its values with 0 (start point)
--(void)prepareLastYValueArrayForNumberOfColumns:(NSInteger)numberOfColums {
+-(void)prepareLastYValueArrayForNumberOfColumns:(NSInteger)numberOfColums withValue:(NSNumber*)value {
     NSMutableArray *array = [[NSMutableArray alloc]init];
     for (int i = 0; i< numberOfColums; i++) {
-        [array addObject:@(0)];
+        [array addObject:value];
     }
     self.lastYValueForColumns =  array;
 }
