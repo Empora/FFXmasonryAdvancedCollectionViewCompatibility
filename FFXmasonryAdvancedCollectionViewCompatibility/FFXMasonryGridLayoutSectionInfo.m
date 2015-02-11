@@ -16,9 +16,7 @@
 /// Layout all the items in this section and return the total height of the section
 - (void)computeLayoutWithOrigin:(CGFloat)start measureItemBlock:(AAPLLayoutMeasureBlock)measureItemBlock measureSupplementaryItemBlock:(AAPLLayoutMeasureBlock)measureSupplementaryItemBlock
 {
-    self.interItemSpacing = 2;
     CGFloat width = self.layoutInfo.width;
-    
     /// The height available to placeholder
     CGFloat availableHeight = self.layoutInfo.height - start;
     NSInteger numberOfItems = [self.items count];
