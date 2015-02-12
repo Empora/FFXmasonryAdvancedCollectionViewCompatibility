@@ -8,7 +8,7 @@
 
 #import "FFXMasonryGridLayoutSectionInfo.h"
 #import <FFXCollectionViewMasonryLayoutLogic.h>
-
+#import <FFXCollectionViewLayoutAttributesMasonry.h>
 @interface FFXMasonryGridLayoutSectionInfo()
 @property (nonatomic, strong) NSMutableArray        *lastYValueForColumns;
 @end
@@ -98,8 +98,9 @@
         for (AAPLGridLayoutItemInfo * item in self.items) {
             [row.items addObject:item];
             NSIndexPath * path = [NSIndexPath indexPathForItem:index inSection:0];
-            UICollectionViewLayoutAttributes * attributes = layoutAttributes[path];
+            FFXCollectionViewLayoutAttributesMasonry * attributes = layoutAttributes[path];
             item.frame = attributes.frame;
+            item.columnIndex = attributes.columnIndex;
             index++;
         }
         // keep row height up to date
