@@ -8,6 +8,7 @@
 
 #import "FFXMasonryGridLayoutSectionInfo.h"
 #import <FFXCollectionViewMasonryLayoutLogic.h>
+
 @interface FFXMasonryGridLayoutSectionInfo()
 @property (nonatomic, strong) NSMutableArray        *lastYValueForColumns;
 @end
