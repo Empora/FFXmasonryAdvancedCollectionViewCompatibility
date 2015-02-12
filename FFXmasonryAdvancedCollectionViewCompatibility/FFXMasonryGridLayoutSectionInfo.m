@@ -105,6 +105,7 @@
         }
         // keep row height up to date
         CGRect rowFrame = row.frame;
+        rowFrame.size.height = [self highestValueOfAllLastColumns];
         row.frame = rowFrame;
         originY += [self highestValueOfAllLastColumns];
         /*********************************************/
