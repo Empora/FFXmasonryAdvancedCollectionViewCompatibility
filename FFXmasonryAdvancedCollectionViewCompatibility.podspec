@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FFXmasonryAdvancedCollectionViewCompatibility"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "Integration of FFXMasonryLayout"
 
   s.description  = "Integration of Masonry layout into advanced collectionview"
