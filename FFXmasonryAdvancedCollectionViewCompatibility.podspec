@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/Empora/FFXmasonryAdvancedCollectionViewCompatibility.git", :tag => s.version.to_s }
   s.source_files  = "FFXmasonryAdvancedCollectionViewCompatibility/FFXMasonryGridLayout.{h,m}","FFXmasonryAdvancedCollectionViewCompatibility/FFXMasonryGridLayoutInfo.{h,m}","FFXmasonryAdvancedCollectionViewCompatibility/FFXMasonryGridLayoutSectionInfo.{h,m}"
   s.dependency 'AAPLAdvancedCollectionView','~> 1.1.3'
-  s.dependency 'FFXCollectionViewMasonryLayout','~> 1.0.3'
+  s.dependency 'FFXCollectionViewMasonryLayout','~> 1.0.5'
 end
