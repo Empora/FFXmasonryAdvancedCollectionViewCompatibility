@@ -66,6 +66,7 @@
     NSAssert(!placeholder || !numberOfItems, @"Can't have both a placeholder and items");
     
     // Lay out items and footers only if there actually ARE items.
+    // Lay out items and footers only if there actually ARE items.
     if (numberOfItems) {
         /**********************************/
         FFXCollectionViewMasonryLayoutLogic * layoutLogic = [[FFXCollectionViewMasonryLayoutLogic alloc]init];
@@ -93,24 +94,22 @@
         
         // Convert all layoutAttributes to
         NSInteger index = 0;
-        AAPLGridLayoutRowInfo *row = [self addRow];
+        
         
         for (AAPLGridLayoutItemInfo * item in self.items) {
+            AAPLGridLayoutRowInfo *row = [self addRow];
             [row.items addObject:item];
             NSIndexPath * path = [NSIndexPath indexPathForItem:index inSection:0];
             FFXCollectionViewLayoutAttributesMasonry * attributes = layoutAttributes[path];
             item.frame = attributes.frame;
             item.columnIndex = attributes.columnIndex;
+            row.frame = item.frame;
             index++;
         }
-        // keep row height up to date
-        CGRect rowFrame = row.frame;
-        rowFrame.size.height = [self highestValueOfAllLastColumns];
-        row.frame = rowFrame;
+        
         originY += [self highestValueOfAllLastColumns];
         /*********************************************/
     }
-    
     // lay out all footers
     for (AAPLGridLayoutSupplementalItemInfo *footerInfo in self.footers) {
         // skip hidden footers
