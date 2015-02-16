@@ -21,7 +21,7 @@
     self.testModel = [[NSMutableArray alloc]init];
     //Create some TestData
     if (test) {
-        for (int i = 0 ; i <100; i++) {
+        for (int i = 0 ; i <10000; i++) {
             int r = arc4random() % 3; // 5 different Kinds of Elements
             if (r == 1) {
                 [self.testModel addObject:@"A"]; // A is Fullspan
@@ -50,13 +50,14 @@
 
 // Return size for each item
 -(CGSize)collectionView:(UICollectionView *)collectionView sizeFittingSize:(CGSize)size forItemAtIndexPath:(NSIndexPath *)indexPath{
+    // Creates random items for fullspan and normal items
     NSString * string = [self.testModel objectAtIndex:indexPath.row];
     if ([string isEqualToString:@"A"]) { // fullspan
         CGSize temp = CGSizeMake(collectionView.frame.size.width, 200 + (arc4random() % 10));
         return temp;
     } else {
         // Random string
-        CGSize temp = CGSizeMake(collectionView.frame.size.width/2-100, 100 + (arc4random() % 300));
+        CGSize temp = CGSizeMake(size.width-1, 200 + (arc4random() % 10));
         return temp;
     }
 }

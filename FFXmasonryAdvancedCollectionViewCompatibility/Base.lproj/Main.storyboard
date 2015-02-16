@@ -20,8 +20,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW6-nI-MhS">
-                                            <rect key="frame" x="4" y="14" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW6-nI-MhS">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -29,6 +29,12 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yW6-nI-MhS" secondAttribute="trailing" id="BvT-P9-i1u"/>
+                                    <constraint firstItem="yW6-nI-MhS" firstAttribute="top" secondItem="BgX-Bv-5UA" secondAttribute="top" id="aHB-t1-a5H"/>
+                                    <constraint firstItem="yW6-nI-MhS" firstAttribute="leading" secondItem="BgX-Bv-5UA" secondAttribute="leading" id="q4S-Nq-lV9"/>
+                                    <constraint firstAttribute="bottom" secondItem="yW6-nI-MhS" secondAttribute="bottom" id="w1K-i3-kwv"/>
+                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <connections>

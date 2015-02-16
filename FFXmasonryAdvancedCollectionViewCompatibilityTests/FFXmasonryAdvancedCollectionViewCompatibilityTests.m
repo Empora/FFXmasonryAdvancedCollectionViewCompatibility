@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-
+#import "FFXMasonryGridLayoutInfo.h"
+#import "FFXMasonryGridLayoutSectionInfo.h"
+#import "FFXMasonryGridLayout.h"
 @interface FFXmasonryAdvancedCollectionViewCompatibilityTests : XCTestCase
-
 @end
 
 @implementation FFXmasonryAdvancedCollectionViewCompatibilityTests
@@ -25,16 +26,14 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+-(void)testThatlayoutInfoClassMethodReturnsCorrectClass {
+    FFXMasonryGridLayout * gridLayout = [[FFXMasonryGridLayout alloc]init];
+    XCTAssert([gridLayout layoutInfoClass]==[FFXMasonryGridLayoutInfo class],@"class should be FFXMasonryGridLayout");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+-(void)testThatlayoutSectionInfoClassReturnsCorrectClass {
+    FFXMasonryGridLayoutInfo * gridLayoutInfo = [[FFXMasonryGridLayoutInfo alloc]init];
+    XCTAssert([gridLayoutInfo layoutSectionInfoClass]==[FFXMasonryGridLayoutSectionInfo class],@"class should be FFXMasonryGridLayout");
 }
 
 @end
