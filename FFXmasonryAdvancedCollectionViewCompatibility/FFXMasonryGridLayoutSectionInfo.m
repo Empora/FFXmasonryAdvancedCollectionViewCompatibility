@@ -30,7 +30,6 @@
         rowHeight = currentItem.frame.size.height;
     }
     
-    
     // First lay out headers
     [self.headers enumerateObjectsUsingBlock:^(AAPLGridLayoutSupplementalItemInfo *headerInfo, NSUInteger headerIndex, BOOL *stop) {
         // skip headers if there are no items and the header isn't a global header

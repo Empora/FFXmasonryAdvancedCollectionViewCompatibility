@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF3EE9A2F38FC60BF423175E"
+               BlueprintIdentifier = "C54AECEEF2F929B9D635627C"
                BuildableName = "libPods-FFXmasonryAdvancedCollectionViewCompatibilityTests.a"
                BlueprintName = "Pods-FFXmasonryAdvancedCollectionViewCompatibilityTests"
                ReferencedContainer = "container:Pods.xcodeproj">

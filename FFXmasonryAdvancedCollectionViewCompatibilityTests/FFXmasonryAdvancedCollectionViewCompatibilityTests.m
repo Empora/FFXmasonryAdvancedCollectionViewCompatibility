@@ -11,13 +11,18 @@
 #import "FFXMasonryGridLayoutInfo.h"
 #import "FFXMasonryGridLayoutSectionInfo.h"
 #import "FFXMasonryGridLayout.h"
+#import "TestDatasource.h" 
+#import "ViewController.h"
 @interface FFXmasonryAdvancedCollectionViewCompatibilityTests : XCTestCase
+@property (nonatomic,strong) UIStoryboard * storyBoard;
 @end
 
 @implementation FFXmasonryAdvancedCollectionViewCompatibilityTests
 
 - (void)setUp {
     [super setUp];
+    self.storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -35,5 +40,7 @@
     FFXMasonryGridLayoutInfo * gridLayoutInfo = [[FFXMasonryGridLayoutInfo alloc]init];
     XCTAssert([gridLayoutInfo layoutSectionInfoClass]==[FFXMasonryGridLayoutSectionInfo class],@"class should be FFXMasonryGridLayout");
 }
-
+-(void)testFFXMasonryGridLayout {
+    ViewController * controller = [self.storyBoard instantiateInitialViewController];
+}
 @end

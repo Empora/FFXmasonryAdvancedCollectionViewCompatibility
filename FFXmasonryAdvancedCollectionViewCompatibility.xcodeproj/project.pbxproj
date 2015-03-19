@@ -25,6 +25,9 @@
 		AF4978531A8A6B8E00454F51 /* TestDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = AF49784F1A8A6B8E00454F51 /* TestDatasource.m */; };
 		AF4978541A8A6B8E00454F51 /* AnotherTestDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978511A8A6B8E00454F51 /* AnotherTestDatasource.m */; };
 		AF4978551A8A6B8E00454F51 /* AnotherTestDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978511A8A6B8E00454F51 /* AnotherTestDatasource.m */; };
+		AFF1EE551A934B5A0016D6C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978241A8A6ABB00454F51 /* ViewController.m */; };
+		AFF1EE561A934B680016D6C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978211A8A6ABB00454F51 /* AppDelegate.m */; };
+		AFF1EE571A934BCA0016D6C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4978261A8A6ABB00454F51 /* Main.storyboard */; };
 		B15D4DBBCD2BC3A52DFC8A66 /* libPods-FFXmasonryAdvancedCollectionViewCompatibilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90BE6BD9CE2595CBFA59C0B2 /* libPods-FFXmasonryAdvancedCollectionViewCompatibilityTests.a */; };
 /* End PBXBuildFile section */
 
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF1EE571A934BCA0016D6C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +369,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF1EE561A934B680016D6C0 /* AppDelegate.m in Sources */,
+				AFF1EE551A934B5A0016D6C0 /* ViewController.m in Sources */,
 				AF4978551A8A6B8E00454F51 /* AnotherTestDatasource.m in Sources */,
 				AF49784B1A8A6B8100454F51 /* FFXMasonryGridLayoutInfo.m in Sources */,
 				AF4978491A8A6B8100454F51 /* FFXMasonryGridLayout.m in Sources */,

@@ -7,14 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "TestDatasource.h"
-#import "AnotherTestDatasource.h"
-#import <AAPLComposedDataSource.h>
 #import <FFXCollectionViewMasonryLayout.h>
 @interface ViewController ()
-@property (nonatomic, strong) TestDatasource * dataSource;
-@property (nonatomic, strong) AnotherTestDatasource * dataSource2;
-@property (nonatomic,strong) AAPLComposedDataSource * composedDatasource;
+
 @end
 
 @implementation ViewController

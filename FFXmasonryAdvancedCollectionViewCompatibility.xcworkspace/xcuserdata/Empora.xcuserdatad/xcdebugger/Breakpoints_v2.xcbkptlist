@@ -33,6 +33,36 @@
             endingLineNumber = "1459"
             landmarkName = "-addLayoutAttributesForSection:atIndex:dataSource:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__81-[AAPLCollectionViewGridLayout addLayoutAttributesForSection:atIndex:dataSource:]_block_invoke502"
+                  moduleName = "FFXmasonryAdvancedCollectionViewCompatibility"
+                  urlString = "file:///Users/Empora/Desktop/FFXmasonryAdvancedCollectionViewCompatibility/Pods/AAPLAdvancedCollectionView/AdvancedCollectionView/Layouts/AAPLCollectionViewGridLayout.m"
+                  timestampString = "445860717.167689"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1459"
+                  endingLineNumber = "1459"
+                  offsetFromSymbolStart = "1321">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__81-[AAPLCollectionViewGridLayout addLayoutAttributesForSection:atIndex:dataSource:]_block_invoke502"
+                  moduleName = "FFXmasonryAdvancedCollectionViewCompatibilityTests"
+                  urlString = "file:///Users/Empora/Desktop/FFXmasonryAdvancedCollectionViewCompatibility/Pods/AAPLAdvancedCollectionView/AdvancedCollectionView/Layouts/AAPLCollectionViewGridLayout.m"
+                  timestampString = "445860717.281276"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1459"
+                  endingLineNumber = "1459"
+                  offsetFromSymbolStart = "1321">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -48,6 +78,52 @@
             startingLineNumber = "1478"
             endingLineNumber = "1478"
             landmarkName = "-addLayoutAttributesForSection:atIndex:dataSource:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__81-[AAPLCollectionViewGridLayout addLayoutAttributesForSection:atIndex:dataSource:]_block_invoke_2"
+                  moduleName = "FFXmasonryAdvancedCollectionViewCompatibility"
+                  urlString = "file:///Users/Empora/Desktop/FFXmasonryAdvancedCollectionViewCompatibility/Pods/AAPLAdvancedCollectionView/AdvancedCollectionView/Layouts/AAPLCollectionViewGridLayout.m"
+                  timestampString = "445860717.169107"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1478"
+                  endingLineNumber = "1478"
+                  offsetFromSymbolStart = "762">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__81-[AAPLCollectionViewGridLayout addLayoutAttributesForSection:atIndex:dataSource:]_block_invoke_2"
+                  moduleName = "FFXmasonryAdvancedCollectionViewCompatibilityTests"
+                  urlString = "file:///Users/Empora/Desktop/FFXmasonryAdvancedCollectionViewCompatibility/Pods/AAPLAdvancedCollectionView/AdvancedCollectionView/Layouts/AAPLCollectionViewGridLayout.m"
+                  timestampString = "445860717.281512"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1478"
+                  endingLineNumber = "1478"
+                  offsetFromSymbolStart = "762">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FFXmasonryAdvancedCollectionViewCompatibilityTests/FFXmasonryAdvancedCollectionViewCompatibilityTests.m"
+            timestampString = "445861135.61746"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "-testFFXMasonryGridLayout"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
