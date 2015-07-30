@@ -42,12 +42,21 @@
         
         // This header needs to be measured!
         if (!headerInfo.height && measureSupplementaryItemBlock) {
-            headerInfo.frame = CGRectMake(0, originY, width, UILayoutFittingExpandedSize.height);
-            headerInfo.height = measureSupplementaryItemBlock(headerIndex, headerInfo.frame).height;
+            if (headerInfo.inSection) {
+                headerInfo.frame = CGRectMake(0+headerInfo.padding.left, originY+headerInfo.padding.right, width-headerInfo.padding.right-headerInfo.padding.left, UILayoutFittingExpandedSize.height);
+                headerInfo.height = measureSupplementaryItemBlock(headerIndex, headerInfo.frame).height;
+            } else {
+                headerInfo.frame = CGRectMake(0, originY, width, UILayoutFittingExpandedSize.height);
+                headerInfo.height = measureSupplementaryItemBlock(headerIndex, headerInfo.frame).height;
+            }
         }
-        
-        headerInfo.frame = CGRectMake(0, originY, width, headerInfo.height);
-        originY += headerInfo.height;
+        if (headerInfo.inSection) {
+            headerInfo.frame = CGRectMake(0+headerInfo.padding.left, originY+headerInfo.padding.top, width-headerInfo.padding.right-headerInfo.padding.left, headerInfo.height);
+            originY += (headerInfo.height +headerInfo.padding.top + headerInfo.padding.bottom);
+        } else {
+            headerInfo.frame = CGRectMake(0, originY, width, headerInfo.height);
+            originY += headerInfo.height;
+        }
     }];
     
     AAPLGridLayoutSupplementalItemInfo *placeholder = self.placeholder;
@@ -116,7 +125,11 @@
             continue;
         // When showing the placeholder, we don't show footers
         CGFloat height = footerInfo.height;
-        footerInfo.frame = CGRectMake(0, originY, width, height);
+        if (footerInfo.inSection) {
+            footerInfo.frame = CGRectMake(0+footerInfo.padding.left, originY+footerInfo.padding.top, width-footerInfo.padding.right-footerInfo.padding.left, height);
+        } else {
+            footerInfo.frame = CGRectMake(0, originY, width, height);
+        }
         originY += height;
     }
     self.frame = CGRectMake(0, start, width, originY - start);
