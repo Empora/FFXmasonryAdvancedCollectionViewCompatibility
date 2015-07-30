@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FFXmasonryAdvancedCollectionViewCompatibility"
-  s.version      = "1.1.4"
+  s.version      = "1.1.5"
   s.summary      = "Integration of FFXMasonryLayout"
 
   s.description  = "Integration of Masonry layout into advanced collectionview"
@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source = { :git => "https://github.com/Empora/FFXmasonryAdvancedCollectionViewCompatibility.git", :tag => s.version.to_s }
   s.source_files  = "FFXmasonryAdvancedCollectionViewCompatibility/FFXMasonryGridLayout.{h,m}","FFXmasonryAdvancedCollectionViewCompatibility/FFXMasonryGridLayoutInfo.{h,m}","FFXmasonryAdvancedCollectionViewCompatibility/FFXMasonryGridLayoutSectionInfo.{h,m}"
-  s.dependency 'AAPLAdvancedCollectionView','~> 1.1.8'
+  s.dependency 'AAPLAdvancedCollectionView','~> 1.1.12'
   s.dependency 'FFXCollectionViewMasonryLayout','~> 1.0.8'
 end
