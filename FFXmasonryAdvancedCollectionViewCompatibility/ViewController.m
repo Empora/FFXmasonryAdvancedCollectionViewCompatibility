@@ -27,7 +27,7 @@
     AAPLLayoutSupplementaryMetrics* testHeader = [testSource newHeaderForSectionAtIndex:0];
     testHeader.shouldPin = YES;
     testHeader.height = 50;
-    testHeader.inSection = YES;
+    testHeader.inSection = NO;
     testHeader.backgroundColor = [UIColor whiteColor];
     testHeader.supplementaryViewClass = [TestPinnableView class];
     testHeader.configureView = ^(UICollectionReusableView *view, AAPLDataSource *dataSource, NSIndexPath *indexPath) {
@@ -37,7 +37,7 @@
     AAPLLayoutSupplementaryMetrics* testFooter = [testSource newFooterForSectionAtIndex:0];
     testFooter.shouldPin = YES;
     testFooter.height = 50;
-    testFooter.inSection = YES;
+    testFooter.inSection = NO;
     testFooter.backgroundColor = [UIColor whiteColor];
     testFooter.supplementaryViewClass = [TestPinnableView class];
     testFooter.configureView = ^(UICollectionReusableView *view, AAPLDataSource *dataSource, NSIndexPath *indexPath) {
