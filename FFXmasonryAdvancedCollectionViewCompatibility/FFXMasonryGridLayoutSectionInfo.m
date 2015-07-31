@@ -43,7 +43,7 @@
         // This header needs to be measured!
         if (!headerInfo.height && measureSupplementaryItemBlock) {
             if (headerInfo.inSection) {
-                headerInfo.frame = CGRectMake(0+headerInfo.padding.left, originY+headerInfo.padding.right, width-headerInfo.padding.right-headerInfo.padding.left, UILayoutFittingExpandedSize.height);
+                headerInfo.frame = CGRectMake(0+self.insets.left, originY, width-self.insets.right-self.insets.left, UILayoutFittingExpandedSize.height);// x,y,width,height
                 headerInfo.height = measureSupplementaryItemBlock(headerIndex, headerInfo.frame).height;
             } else {
                 headerInfo.frame = CGRectMake(0, originY, width, UILayoutFittingExpandedSize.height);
@@ -51,8 +51,8 @@
             }
         }
         if (headerInfo.inSection) {
-            headerInfo.frame = CGRectMake(0+headerInfo.padding.left, originY+headerInfo.padding.top, width-headerInfo.padding.right-headerInfo.padding.left, headerInfo.height);
-            originY += (headerInfo.height +headerInfo.padding.top + headerInfo.padding.bottom);
+            headerInfo.frame = CGRectMake(0+self.insets.left, originY+self.insets.top, width-self.insets.right-self.insets.left, headerInfo.height);
+            originY += (headerInfo.height+self.interItemSpacing);
         } else {
             headerInfo.frame = CGRectMake(0, originY, width, headerInfo.height);
             originY += headerInfo.height;
@@ -126,7 +126,7 @@
         // When showing the placeholder, we don't show footers
         CGFloat height = footerInfo.height;
         if (footerInfo.inSection) {
-            footerInfo.frame = CGRectMake(0+footerInfo.padding.left, originY+footerInfo.padding.top, width-footerInfo.padding.right-footerInfo.padding.left, height);
+            footerInfo.frame = CGRectMake(0+self.insets.left, originY, width-self.insets.right-self.insets.left, height);
         } else {
             footerInfo.frame = CGRectMake(0, originY, width, height);
         }
