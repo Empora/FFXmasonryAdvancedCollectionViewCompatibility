@@ -10,7 +10,7 @@
 #define COCOAPODS_POD_AVAILABLE_AAPLAdvancedCollectionView
 #define COCOAPODS_VERSION_MAJOR_AAPLAdvancedCollectionView 1
 #define COCOAPODS_VERSION_MINOR_AAPLAdvancedCollectionView 1
-#define COCOAPODS_VERSION_PATCH_AAPLAdvancedCollectionView 3
+#define COCOAPODS_VERSION_PATCH_AAPLAdvancedCollectionView 12
 
 // FFXCollectionViewMasonryLayout
 #define COCOAPODS_POD_AVAILABLE_FFXCollectionViewMasonryLayout

@@ -51,9 +51,6 @@ typedef void (^AAPLLayoutSupplementaryItemConfigurationBlock)(UICollectionReusab
 /// Use top & bottom padding to adjust spacing of header & footer elements. Not all headers & footers adhere to padding. Default is UIEdgeInsetsZero which is interpretted by supplementary items to be their default values.
 @property (nonatomic) UIEdgeInsets padding;
 
-/// Use to define how padding should be used 
-@property (nonatomic) BOOL inSection;
-
 /// The class to use when dequeuing an instance of this supplementary view
 @property (nonatomic) Class supplementaryViewClass;
 
@@ -71,6 +68,9 @@ typedef void (^AAPLLayoutSupplementaryItemConfigurationBlock)(UICollectionReusab
 
 /// An optional block used to create an instance of the supplementary view.
 @property (nonatomic, copy) AAPLLayoutSupplementaryItemCreationBlock createView;
+
+/// Use to define how padding should be used
+@property (nonatomic) BOOL inSection;
 
 /// A block that can be used to configure the supplementary view after it is created.
 @property (nonatomic, copy) AAPLLayoutSupplementaryItemConfigurationBlock configureView;

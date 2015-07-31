@@ -29,9 +29,18 @@
     testHeader.height = 50;
     testHeader.inSection = YES;
     testHeader.backgroundColor = [UIColor whiteColor];
-    testHeader.padding = UIEdgeInsetsMake(32.0, 8.0, 1.0, 8.0);
     testHeader.supplementaryViewClass = [TestPinnableView class];
     testHeader.configureView = ^(UICollectionReusableView *view, AAPLDataSource *dataSource, NSIndexPath *indexPath) {
+        view.backgroundColor = [UIColor whiteColor];
+    };
+    
+    AAPLLayoutSupplementaryMetrics* testFooter = [testSource newFooterForSectionAtIndex:0];
+    testFooter.shouldPin = YES;
+    testFooter.height = 50;
+    testFooter.inSection = YES;
+    testFooter.backgroundColor = [UIColor whiteColor];
+    testFooter.supplementaryViewClass = [TestPinnableView class];
+    testFooter.configureView = ^(UICollectionReusableView *view, AAPLDataSource *dataSource, NSIndexPath *indexPath) {
         view.backgroundColor = [UIColor whiteColor];
     };
     
