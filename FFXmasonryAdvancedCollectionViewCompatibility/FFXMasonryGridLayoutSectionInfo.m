@@ -130,7 +130,7 @@
         } else {
             footerInfo.frame = CGRectMake(0, originY, width, height);
         }
-        originY += height;
+        originY = height;
     }
     self.frame = CGRectMake(0, start, width, originY - start);
 }
