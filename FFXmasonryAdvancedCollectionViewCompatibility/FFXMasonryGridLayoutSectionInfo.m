@@ -115,7 +115,7 @@
             index++;
         }
         
-        originY += [self highestValueOfAllLastColumns];
+        originY = [self highestValueOfAllLastColumns];
         /*********************************************/
     }
     // lay out all footers
@@ -130,7 +130,7 @@
         } else {
             footerInfo.frame = CGRectMake(0, originY, width, height);
         }
-        originY += height;
+        originY = height;
     }
     self.frame = CGRectMake(0, start, width, originY - start);
 }
@@ -145,6 +145,15 @@
 }
 
 -(CGFloat)highestValueOfAllLastColumns{
-    return [[self.lastYValueForColumns valueForKeyPath:@"@max.intValue"] floatValue];
+    float maxYValue = 0;
+    int i = 0;
+    for (NSNumber * value in self.lastYValueForColumns) {
+        if ([value floatValue]> maxYValue) {
+            maxYValue = [value floatValue];
+        }
+        ++i;
+    }
+    return maxYValue;
 }
+
 @end

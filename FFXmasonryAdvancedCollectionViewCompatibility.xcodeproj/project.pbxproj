@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3BB4DB134E1C9D0A46CAF069 /* libPods-FFXmasonryAdvancedCollectionViewCompatibility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F133510B32EE44003BADC21 /* libPods-FFXmasonryAdvancedCollectionViewCompatibility.a */; };
+		AF313DAB1B6BA18300853406 /* TestPinnableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF313DAA1B6BA18300853406 /* TestPinnableView.m */; };
 		AF49781F1A8A6ABB00454F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF49781E1A8A6ABB00454F51 /* main.m */; };
 		AF4978221A8A6ABB00454F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978211A8A6ABB00454F51 /* AppDelegate.m */; };
 		AF4978251A8A6ABB00454F51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978241A8A6ABB00454F51 /* ViewController.m */; };
@@ -23,8 +24,6 @@
 		AF49784D1A8A6B8100454F51 /* FFXMasonryGridLayoutSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978471A8A6B8100454F51 /* FFXMasonryGridLayoutSectionInfo.m */; };
 		AF4978521A8A6B8E00454F51 /* TestDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = AF49784F1A8A6B8E00454F51 /* TestDatasource.m */; };
 		AF4978531A8A6B8E00454F51 /* TestDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = AF49784F1A8A6B8E00454F51 /* TestDatasource.m */; };
-		AF4978541A8A6B8E00454F51 /* AnotherTestDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978511A8A6B8E00454F51 /* AnotherTestDatasource.m */; };
-		AF4978551A8A6B8E00454F51 /* AnotherTestDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978511A8A6B8E00454F51 /* AnotherTestDatasource.m */; };
 		AFF1EE551A934B5A0016D6C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978241A8A6ABB00454F51 /* ViewController.m */; };
 		AFF1EE561A934B680016D6C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4978211A8A6ABB00454F51 /* AppDelegate.m */; };
 		AFF1EE571A934BCA0016D6C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4978261A8A6ABB00454F51 /* Main.storyboard */; };
@@ -47,6 +46,8 @@
 		4F133510B32EE44003BADC21 /* libPods-FFXmasonryAdvancedCollectionViewCompatibility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFXmasonryAdvancedCollectionViewCompatibility.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D9F8BCEAD90408CDAED18C /* Pods-FFXmasonryAdvancedCollectionViewCompatibility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFXmasonryAdvancedCollectionViewCompatibility.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFXmasonryAdvancedCollectionViewCompatibility/Pods-FFXmasonryAdvancedCollectionViewCompatibility.release.xcconfig"; sourceTree = "<group>"; };
 		90BE6BD9CE2595CBFA59C0B2 /* libPods-FFXmasonryAdvancedCollectionViewCompatibilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFXmasonryAdvancedCollectionViewCompatibilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF313DA91B6BA18300853406 /* TestPinnableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPinnableView.h; sourceTree = "<group>"; };
+		AF313DAA1B6BA18300853406 /* TestPinnableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPinnableView.m; sourceTree = "<group>"; };
 		AF4978191A8A6ABB00454F51 /* FFXmasonryAdvancedCollectionViewCompatibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFXmasonryAdvancedCollectionViewCompatibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF49781D1A8A6ABB00454F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF49781E1A8A6ABB00454F51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,8 +69,6 @@
 		AF4978471A8A6B8100454F51 /* FFXMasonryGridLayoutSectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFXMasonryGridLayoutSectionInfo.m; sourceTree = "<group>"; };
 		AF49784E1A8A6B8E00454F51 /* TestDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDatasource.h; sourceTree = "<group>"; };
 		AF49784F1A8A6B8E00454F51 /* TestDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDatasource.m; sourceTree = "<group>"; };
-		AF4978501A8A6B8E00454F51 /* AnotherTestDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherTestDatasource.h; sourceTree = "<group>"; };
-		AF4978511A8A6B8E00454F51 /* AnotherTestDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherTestDatasource.m; sourceTree = "<group>"; };
 		AF4978561A8A6E0F00454F51 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		D23F36E0533D370420BB281B /* Pods-FFXmasonryAdvancedCollectionViewCompatibilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFXmasonryAdvancedCollectionViewCompatibilityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFXmasonryAdvancedCollectionViewCompatibilityTests/Pods-FFXmasonryAdvancedCollectionViewCompatibilityTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +102,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF313DA71B6BA14600853406 /* Test Project */ = {
+			isa = PBXGroup;
+			children = (
+				AF4978201A8A6ABB00454F51 /* AppDelegate.h */,
+				AF4978211A8A6ABB00454F51 /* AppDelegate.m */,
+				AF4978231A8A6ABB00454F51 /* ViewController.h */,
+				AF4978241A8A6ABB00454F51 /* ViewController.m */,
+				AF49784E1A8A6B8E00454F51 /* TestDatasource.h */,
+				AF49784F1A8A6B8E00454F51 /* TestDatasource.m */,
+				AF313DA91B6BA18300853406 /* TestPinnableView.h */,
+				AF313DAA1B6BA18300853406 /* TestPinnableView.m */,
+			);
+			name = "Test Project";
+			sourceTree = "<group>";
+		};
+		AF313DA81B6BA15A00853406 /* Layout Logic */ = {
+			isa = PBXGroup;
+			children = (
+				AF4978421A8A6B8100454F51 /* FFXMasonryGridLayout.h */,
+				AF4978431A8A6B8100454F51 /* FFXMasonryGridLayout.m */,
+				AF4978441A8A6B8100454F51 /* FFXMasonryGridLayoutInfo.h */,
+				AF4978451A8A6B8100454F51 /* FFXMasonryGridLayoutInfo.m */,
+				AF4978461A8A6B8100454F51 /* FFXMasonryGridLayoutSectionInfo.h */,
+				AF4978471A8A6B8100454F51 /* FFXMasonryGridLayoutSectionInfo.m */,
+			);
+			name = "Layout Logic";
+			sourceTree = "<group>";
+		};
 		AF4978101A8A6ABB00454F51 = {
 			isa = PBXGroup;
 			children = (
@@ -127,23 +154,11 @@
 			isa = PBXGroup;
 			children = (
 				AF4978561A8A6E0F00454F51 /* LICENSE.txt */,
-				AF4978201A8A6ABB00454F51 /* AppDelegate.h */,
-				AF4978211A8A6ABB00454F51 /* AppDelegate.m */,
-				AF4978231A8A6ABB00454F51 /* ViewController.h */,
-				AF4978241A8A6ABB00454F51 /* ViewController.m */,
-				AF49784E1A8A6B8E00454F51 /* TestDatasource.h */,
-				AF49784F1A8A6B8E00454F51 /* TestDatasource.m */,
-				AF4978421A8A6B8100454F51 /* FFXMasonryGridLayout.h */,
-				AF4978431A8A6B8100454F51 /* FFXMasonryGridLayout.m */,
-				AF4978441A8A6B8100454F51 /* FFXMasonryGridLayoutInfo.h */,
-				AF4978451A8A6B8100454F51 /* FFXMasonryGridLayoutInfo.m */,
-				AF4978461A8A6B8100454F51 /* FFXMasonryGridLayoutSectionInfo.h */,
-				AF4978471A8A6B8100454F51 /* FFXMasonryGridLayoutSectionInfo.m */,
-				AF4978501A8A6B8E00454F51 /* AnotherTestDatasource.h */,
-				AF4978511A8A6B8E00454F51 /* AnotherTestDatasource.m */,
+				AF313DA71B6BA14600853406 /* Test Project */,
+				AF313DA81B6BA15A00853406 /* Layout Logic */,
 				AF4978261A8A6ABB00454F51 /* Main.storyboard */,
-				AF4978291A8A6ABB00454F51 /* Images.xcassets */,
 				AF49782B1A8A6ABB00454F51 /* LaunchScreen.xib */,
+				AF4978291A8A6ABB00454F51 /* Images.xcassets */,
 				AF49781C1A8A6ABB00454F51 /* Supporting Files */,
 			);
 			path = FFXmasonryAdvancedCollectionViewCompatibility;
@@ -355,12 +370,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4978251A8A6ABB00454F51 /* ViewController.m in Sources */,
+				AF313DAB1B6BA18300853406 /* TestPinnableView.m in Sources */,
 				AF4978221A8A6ABB00454F51 /* AppDelegate.m in Sources */,
 				AF49784A1A8A6B8100454F51 /* FFXMasonryGridLayoutInfo.m in Sources */,
 				AF4978481A8A6B8100454F51 /* FFXMasonryGridLayout.m in Sources */,
 				AF4978521A8A6B8E00454F51 /* TestDatasource.m in Sources */,
 				AF49784C1A8A6B8100454F51 /* FFXMasonryGridLayoutSectionInfo.m in Sources */,
-				AF4978541A8A6B8E00454F51 /* AnotherTestDatasource.m in Sources */,
 				AF49781F1A8A6ABB00454F51 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +386,6 @@
 			files = (
 				AFF1EE561A934B680016D6C0 /* AppDelegate.m in Sources */,
 				AFF1EE551A934B5A0016D6C0 /* ViewController.m in Sources */,
-				AF4978551A8A6B8E00454F51 /* AnotherTestDatasource.m in Sources */,
 				AF49784B1A8A6B8100454F51 /* FFXMasonryGridLayoutInfo.m in Sources */,
 				AF4978491A8A6B8100454F51 /* FFXMasonryGridLayout.m in Sources */,
 				AF49784D1A8A6B8100454F51 /* FFXMasonryGridLayoutSectionInfo.m in Sources */,
