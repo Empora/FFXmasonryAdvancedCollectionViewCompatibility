@@ -284,6 +284,7 @@
     }
 
     self.frame = CGRectMake(0, start, width, originY - start);
+    NSLog(@"");
 }
 
 - (NSString *)description
