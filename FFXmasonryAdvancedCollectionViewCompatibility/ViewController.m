@@ -24,6 +24,7 @@
     self.composedDatasource.defaultMetrics.rowHeight = AAPLRowHeightVariable;
     
     TestDatasource * testSource = [[TestDatasource alloc]init];
+    testSource.defaultMetrics.padding = UIEdgeInsetsMake(10, 10, 200, 10); // top, left, bottom,right
     AAPLLayoutSupplementaryMetrics* testHeader = [testSource newHeaderForSectionAtIndex:0];
     testHeader.shouldPin = YES;
     testHeader.height = 50;
@@ -34,6 +35,11 @@
         view.backgroundColor = [UIColor whiteColor];
     };
     
+    TestDatasource * testSource2 = [[TestDatasource alloc]init];
+    testSource2.defaultMetrics.padding = UIEdgeInsetsMake(0, 10, 20, 10); // top, left, bottom,right
+
+    
+    /*
     AAPLLayoutSupplementaryMetrics* testFooter = [testSource newFooterForSectionAtIndex:0];
     testFooter.shouldPin = YES;
     testFooter.height = 50;
@@ -42,10 +48,11 @@
     testFooter.supplementaryViewClass = [TestPinnableView class];
     testFooter.configureView = ^(UICollectionReusableView *view, AAPLDataSource *dataSource, NSIndexPath *indexPath) {
         view.backgroundColor = [UIColor whiteColor];
-    };
+    };*/
     
     [self.composedDatasource addDataSource:testSource];
-    [self.composedDatasource addDataSource:[[TestDatasource alloc]init]];
+    [self.composedDatasource addDataSource:testSource2];
+    //[self.composedDatasource addDataSource:[[TestDatasource alloc]init]];
     
     // Assigning our datasource to colleciontViewDatasource
     self.collectionView.dataSource = self.composedDatasource;

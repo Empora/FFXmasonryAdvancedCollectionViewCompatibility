@@ -11,7 +11,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="RAf-FZ-1Li">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewLayout key="collectionViewLayout" id="Pvd-v4-gyP" customClass="FFXMasonryGridLayout"/>
+                        <collectionViewLayout key="collectionViewLayout" id="Pvd-v4-gyP" customClass="AAPLCollectionViewGridLayout"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="BgX-Bv-5UA">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
