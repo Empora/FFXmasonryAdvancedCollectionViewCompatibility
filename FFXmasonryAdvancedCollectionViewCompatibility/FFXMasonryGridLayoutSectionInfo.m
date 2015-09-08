@@ -43,10 +43,10 @@
         // This header needs to be measured!
         if (!headerInfo.height && measureSupplementaryItemBlock) {
             if (headerInfo.inSection) {
-                headerInfo.frame = CGRectMake(0+self.insets.left, originY, width-self.insets.right-self.insets.left, UILayoutFittingExpandedSize.height);// x,y,width,height
+                headerInfo.frame = CGRectMake(0+self.insets.left, originY +self.insets.top, width-self.insets.right-self.insets.left, UILayoutFittingExpandedSize.height);// x,y,width,height
                 headerInfo.height = measureSupplementaryItemBlock(headerIndex, headerInfo.frame).height;
             } else {
-                headerInfo.frame = CGRectMake(0, originY, width, UILayoutFittingExpandedSize.height);
+                headerInfo.frame = CGRectMake(0, originY+self.insets.top, width, UILayoutFittingExpandedSize.height);
                 headerInfo.height = measureSupplementaryItemBlock(headerIndex, headerInfo.frame).height;
             }
         }
@@ -54,8 +54,8 @@
             headerInfo.frame = CGRectMake(0+self.insets.left, originY+self.insets.top, width-self.insets.right-self.insets.left, headerInfo.height);
             originY += (headerInfo.height+self.interItemSpacing);
         } else {
-            headerInfo.frame = CGRectMake(0, originY, width, headerInfo.height);
-            originY += headerInfo.height;
+            headerInfo.frame = CGRectMake(self.insets.right, originY+self.insets.top, width-self.insets.left-self.insets.right, headerInfo.height);
+            originY += headerInfo.height+self.insets.top;
         }
     }];
     
