@@ -74,7 +74,6 @@
     NSAssert(!placeholder || !numberOfItems, @"Can't have both a placeholder and items");
     
     // Lay out items and footers only if there actually ARE items.
-    // Lay out items and footers only if there actually ARE items.
     if (numberOfItems) {
         /**********************************/
         FFXCollectionViewMasonryLayoutLogic * layoutLogic = [[FFXCollectionViewMasonryLayoutLogic alloc]init];
@@ -85,9 +84,7 @@
         layoutLogic.numberOfItems = numberOfItems;
         layoutLogic.collectionViewFrame = CGRectMake(0,0,self.layoutInfo.width, 0); // we just need height
         layoutLogic.interItemSpacing = self.interItemSpacing;
-        if(!self.lastYValueForColumns) {
-            [self prepareLastYValueArrayForNumberOfColumns:layoutLogic.numberOfColums withValue:@(originY)];
-        }
+        [self prepareLastYValueArrayForNumberOfColumns:layoutLogic.numberOfColums withValue:@(originY)];
         layoutLogic.lastYValueForColumns = self.lastYValueForColumns;
         
         NSDictionary * layoutAttributes = [layoutLogic computeLayoutWithmeasureItemBlock:^CGSize(NSInteger itemIndex,CGRect frame){
